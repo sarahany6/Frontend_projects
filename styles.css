@@ -38,7 +38,6 @@ h1{
     text-align: center;
     font-family: "Georgia", serif;
 }
-
 label{
     color: balck;
     text-transform: uppercase;
@@ -72,7 +71,7 @@ P{
 .cv-p{
     text-align: left; 
     font-family: 'Seoge UI' , sans-serif; 
-    color: black;"
+    color: black;
     font-size: 15px;
     font-weight: bold;
 }

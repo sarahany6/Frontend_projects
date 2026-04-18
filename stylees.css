@@ -20,7 +20,52 @@ body {
     justify-content: center;
     background: linear-gradient(135deg, var(--Sakura) 0%, var(--MistyRose) 100%);
     padding: 20px;
+    padding-top: 60px;
 }
+
+/* Nav Bar */
+#navbar{
+    background-color: var(--primary-color);
+    padding: 10px 20px;
+    box-shadow: 0 25px 45px rgba(86, 33, 53, 0.25);
+    margin-left: 20px;
+    margin-right: 50px;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+}
+.navigate {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links a {
+  color:var(--Sakura);
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.4s ease;
+  display: inline-block;
+}
+
+.nav-links a:hover {
+  color: white;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+  transform: translateY(2px);
+}
+ 
 
 .profile_card {
     position: relative;
@@ -170,6 +215,8 @@ body {
     background: var(--primary-color);
     transform: translateY(2px);
     box-shadow: 0 8px 20px rgba(86,33,53,0.3); 
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+
 }
  
 
