@@ -229,7 +229,6 @@ body {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-areas: 
-        "header"
         "profile"
         "card1"
         "card2"
@@ -241,9 +240,7 @@ body {
 }
 
 /* ///////////////////// */
-.head {
-    grid-area: header;
-}
+
 
 .profile_card {
     grid-area: profile;
@@ -264,32 +261,7 @@ body {
     margin-top: auto;
 }
 
-/* Header Styles */
-.head {
-    background: linear-gradient(120deg, var(--primary-color), #8e4a6b);
-    border-radius: 30px;
-    padding: 30px;
-    color: white;
-}
 
-.head_title {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.head_title h1 {
-    font-size: 28px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.head_title p {
-    color: var(--Sakura);
-    margin-top: 5px;
-}
 
 /* Cards styling */
 .cards {
