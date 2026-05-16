@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+     padding: 0;
+    box-sizing: border-box;
+}
+
+
+header{
+  align-self: start;
+  justify-content: center;
+  font-size: 50px;
+  font-weight: bold;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  flex-wrap: wrap;
+  margin-right: -10px;
+}
+
+body {
+            background: linear-gradient(145deg,#132c41 0%, #0b8ba4 100%);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Segoe UI', 'Poppins', sans-serif;
+            padding: 16px;
+        }
+
+        .clock-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: -320px;
+            padding: 20px;
+            border-radius: 50%;
+            background: rgba(13, 2, 82, 0.2);
+            backdrop-filter: blur(2px);
+        }
+
+        .clock {
+            width: 340px;
+            height: 340px;
+            border-radius: 50%;
+            background: radial-gradient(circle at 35% 28%, #2c313f, #30446d);
+            position: relative;
+            box-shadow: 0 25px 30px rgba(255,255,255,0.1);
+            transition: box-shadow 0.2s ease;
+        }
+
+       
+        .number {
+            position: absolute;
+            font-size: 20px;
+            font-weight: 600;
+            color: #eef3ff;
+            text-shadow: 0 3px 6px rgba(0,0,0,0.4);
+            transform: translate(-50%, -50%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Segoe UI', 'Poppins', monospace;
+            border-radius: 50%;
+        }
+
+        .number1  { top: 16.5%; left: 84%; }
+        .number2  { top: 32%; left: 92.5%; }
+        .number3  { top: 50%; left: 97%; }
+        .number4  { top: 68%; left: 92.5%; }
+        .number5  { top: 83.5%; left: 84%; }
+        .number6  { top: 89%; left: 50%; }
+        .number7  { top: 83.5%; left: 16%; }
+        .number8  { top: 68%; left: 7.5%; }
+        .number9  { top: 50%; left: 3%; }
+        .number10 { top: 32%; left: 7.5%; }
+        .number11 { top: 16.5%; left: 16%; }
+        .number12 { top: 11%; left: 50%; }
+
+        
+        .center-dot {
+            position: absolute;
+            width: 14px;
+            height: 14px;
+            background: radial-gradient(circle, #eef5ff, #3452d7);
+            border-radius: 50%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            box-shadow: 0 2px 8px rgba(254, 253, 253, 0.5);
+            z-index: 25;
+            border: 1px solid rgba(255,255,240,0.4);
+        }
+
+        
+        .hand {
+            position: absolute;
+            bottom: 50%;
+            left: 50%;
+            transform-origin: 50% 100%;  
+            border-radius: 12px 12px 6px 6px;
+            transition: transform 0.05s cubic-bezier(0.2, 1.8, 0.4, 1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+          
+        }
+
+        
+        .hour-hand {
+            width: 8px;
+            height: 82px;
+            margin-left: -4px;
+            margin-bottom: 0px;
+            background: linear-gradient(135deg, #eef3ff, #cbd5f0);
+            border-radius: 20px 20px 8px 8px;
+            z-index: 10;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.4);
+            border-bottom: 1px solid rgba(0,0,0,0.2);
+            animation : rotateHour 43200s linear infinite
+        }
+
+      
+        .minute-hand {
+            width: 6px;
+            height: 118px;
+            margin-left: -3px;
+            background: linear-gradient(145deg, #f0f4ff, #ced8fc);
+            z-index: 15;
+            border-radius: 16px 16px 8px 8px;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.3);
+            animation : rotateMinute 3600s linear infinite
+        }
+
+       
+        .second-hand {
+            width: 2.5px;
+            height: 135px;
+            margin-left: -1.25px;
+            background: #ff4d6d;
+            z-index: 20;
+            border-radius: 40% 40% 4px 4px;
+            box-shadow: 0 0 6px rgba(255, 77, 109, 0.6);
+            transition: transform 0.03s linear;
+            animation : rotateSecond 60s linear infinite
+        }
+
+        
+@keyframes rotateHour {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+}
+
+@keyframes rotateMinute {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+}
+
+@keyframes rotateSecond {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+}
+        
+
+
+
+
+ 
